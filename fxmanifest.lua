@@ -1,18 +1,19 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'Squeeze Studios'
-description 'Standalone AI Taxi System'
-version '1.0.0'
+author 'YourName'
+description 'AI Taxi System'
+version '2.0.0'
 
 shared_script 'config.lua'
 
-client_scripts {
-    'client/main.lua',
-    'client/spawn.lua',
-    'client/drive.lua',
-    'client/waypoint.lua',
-    'client/input.lua'
-}
-
+client_script 'client/main.lua'
 server_script 'server/main.lua'
+
+ui_page 'html/index.html'
+
+files {
+    'html/index.html',
+    'html/style.css',
+    'html/script.js'
+}
